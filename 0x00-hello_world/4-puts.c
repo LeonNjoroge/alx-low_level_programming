@@ -2,7 +2,7 @@
 /**
  *main - entry point
  *It prints a statement and exits
- *Return:Always 0(Success) 
+ *Return:Always 0(Success)
  */
 int main(void)
 {
