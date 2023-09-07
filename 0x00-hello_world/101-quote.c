@@ -11,7 +11,7 @@ const char message[] = "and that piece of art is useful\" \
 int i = 0;
 for (; message[i] != '\0'; i++)
 {
-  fputc(message[i], stderr);
+fputc(message[i], stderr);
 }
 return (1);
 }
