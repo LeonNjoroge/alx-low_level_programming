@@ -3,11 +3,12 @@
 int main()
 {
   int i = 0;
+  char letter;
   for (; i <= 9; i++)
   {
     putchar('0' + i);
   }
-  char letter;
+ 
   letter = 'a';
 
   while (letter <= 'f')
