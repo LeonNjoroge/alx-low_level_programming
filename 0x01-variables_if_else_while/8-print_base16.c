@@ -7,7 +7,8 @@ int main()
   {
     putchar('0' + i);
   }
-  char letter = 'a';
+  char letter;
+  letter = 'a';
 
   while (letter <= 'f')
   {
