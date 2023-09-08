@@ -6,8 +6,15 @@ int main()
 
   while (letter <= 'z')
   {
-    putchar(letter);
-    letter++;
+    if (letter != 'q' || letter != 'e')
+    {
+      putchar(letter);
+    }
+    else
+    {
+      break;
+    }
+      letter++;
   }
   putchar('\n');
   return (0);
