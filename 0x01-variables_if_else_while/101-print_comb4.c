@@ -1,3 +1,4 @@
+#include <stdio.h>
 int main()
 {
   int a;
@@ -7,13 +8,13 @@ int main()
   {
     for (b = a + 1; b <= 9; b++)
     {
-      for (int c = b +1; c <= 9; c++)
+      for (c = b +1; c <= 9; c++)
       {
       putchar(a + '0');
       putchar(b + '0');
-      putchar(c+ '0');
+      putchar(c + '0');
 
-      if (!(i == 7 && j == 8 && k==9))
+      if (!(a == 7 && b == 8 && c==9))
       {
         putchar(',');
         putchar(' ');
