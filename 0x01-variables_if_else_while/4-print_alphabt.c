@@ -13,7 +13,7 @@ int main()
     }
     else
     {
-      letter++
+      letter++;
     }
   }
   putchar('\n');
