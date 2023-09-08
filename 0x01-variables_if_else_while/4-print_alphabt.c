@@ -9,12 +9,12 @@ int main()
     if (letter != 'e' && letter != 'q')
     {
       putchar(letter);
+      letter++;
     }
     else
     {
-      break;
+      letter++
     }
-      letter++;
   }
   putchar('\n');
   return (0);
