@@ -2,13 +2,10 @@
 
 int main()
 {
-  int num = 0;
-
-  while (num < 10)
+  for (int i = 0; i <= 9; i++)
   {
-    printf("%d",num);
-    num++;
+    putchar('0'+1);
+    putchar('\n');
   }
-  putchar('\n');
   return (0);
 }
