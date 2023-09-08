@@ -1,9 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/**
+ *
+ *main - entry point of the program
+ *
+ *Description - assign a random number to the variable n each time it is executed.
+ *
+ *return - Always True (0)
+ *
+ *
+ */
+
 int main(void)
 {
 	int n;
