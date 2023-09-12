@@ -7,7 +7,8 @@
  *
  * Return: 1 if @c is lowercase, 0 otherwise.
  *
- * Description: This function checks if the input character @c is a lowercase letter.
+ * Description: This function checks if the input
+ * character @c is a lowercase letter.
  * It returns 1 if @c is lowercase and 0 otherwise.
  */
 int _islower(int c)
