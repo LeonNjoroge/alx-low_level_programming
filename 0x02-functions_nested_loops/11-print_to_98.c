@@ -6,7 +6,8 @@
  *
  * @num: The starting number.
  *
- * Description: This function prints all integers from the given number @num to 98.
+ * Description: This function prints 
+ *all integers from the given number @num to 98.
  * It starts from @num and increments or decrements as needed to reach 98,
  * printing each number followed by a comma and space. It ends with a newline.
  */
