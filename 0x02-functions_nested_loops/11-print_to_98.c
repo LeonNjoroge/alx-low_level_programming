@@ -12,15 +12,15 @@
  */
 void print_to_98(int num)
 {
-    while (num != 98)
-    {
-        printf("%d, ", num);
+	while (num != 98)
+	{
+		printf("%d, ", num);
 
-        if (num < 98)
-            num++;
-        else
-            num--;
-    }
+		if (num < 98)
+			num++;
+		else
+			num--;
+	}
 
-    printf("%d\n", num);
+	printf("%d\n", num);
 }
