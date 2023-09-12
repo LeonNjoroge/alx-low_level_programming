@@ -1,11 +1,15 @@
 #include "main.h"
 #include <stdio.h>
 
-
-
-int main(void)
+void print_to_98(int num)
 {
-    int num = add(89, 9);
-    printf("%d\n", num);
-    return (0);
+	while (num != 98)
+	{
+		printf("%d, ", num);
+		if (num < 98)
+			num++;
+		else
+			num--;
+	}
+	printf("%d\n", num);
 }
