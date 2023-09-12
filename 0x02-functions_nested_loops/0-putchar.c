@@ -11,13 +11,13 @@
  */
 int main(void)
 {
-    char str[] = "_putchar\n";
-    int i = 0;
+	char str[] = "_putchar\n";
+	int i = 0;
 
-    for (; str[i] != '\0'; i++)
-    {
-        _putchar(str[i]);
-    }
+	for (; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 
-    return (0);
+	return (0);
 }
