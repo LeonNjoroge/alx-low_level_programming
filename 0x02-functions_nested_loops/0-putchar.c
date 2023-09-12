@@ -8,7 +8,7 @@ int main(void)
   for (; str[i] != '\0'; i++)
   {
     write(1, &str[i], 1);
-    i++;
+   
   }
   return(0);
 
