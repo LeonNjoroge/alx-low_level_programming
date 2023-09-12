@@ -1,5 +1,0 @@
-int _putchar(word[])
-{
-  int length = strlen(word);
-  while 
-}

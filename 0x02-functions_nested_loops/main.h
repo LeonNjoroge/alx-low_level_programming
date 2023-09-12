@@ -1,14 +1,8 @@
-int _putchar(word)
-{
-  int length = strlen(word);
-  int i = 0;
-  while(word[i] != length)
-  {
-    putchar(word[i]);
-    
-  }
-  putchar("\n");
-      
+#include <unistd.h>
 
-  
+void _putchar(const char *str) {
+    while (*str) {
+      write(1, str, 1);
+        str++;
+    }
 }
