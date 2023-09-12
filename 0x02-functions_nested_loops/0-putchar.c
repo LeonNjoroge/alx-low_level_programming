@@ -1,7 +1,12 @@
 #include "main.h"
 int main(void)
 {
-  _putchar("_putchar");
+  char str[] = "_putchar";
+  int i = 0;
+  while (&str[i]) {
+      write(1, &str[i], 1);
+        i++;
+    }
   return(0);
 
 }  
