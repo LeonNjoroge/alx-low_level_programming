@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd.h>
+
 
 int main(void)
 {
@@ -7,8 +7,7 @@ int main(void)
   int i = 0;
   for (; str[i] != '\0'; i++)
   {
-    write(1, &str[i], 1);
-   
+    _putchar(str[i]);
   }
   return(0);
 
