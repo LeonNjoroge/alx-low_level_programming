@@ -3,7 +3,7 @@ int main(void)
 {
   char str[] = "_putchar";
   int i = 0;
-  while (str[i] != "\0")
+  for (; str[i] != '\0'; i++)
   {
     write(1, &str[i], 1);
     i++;
