@@ -7,9 +7,9 @@
  *
  * Return: 1 if @n is positive, 0 if @n is zero, -1 if @n is negative.
  *
- * Description: This function checks the 
+ * Description: This function checks the
  *sign of the input number @n and prints
- * a positive sign (+) for positive 
+ * a positive sign (+) for positive
  *numbers, a zero (0) for zero, and a negative
  * sign (-) for negative numbers.
  * It also returns 1 for positive, 0 for zero, and
