@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+0;276;0c/**
  * add - Adds two integers.
  *
  * @a: The first integer to be added.
@@ -14,6 +14,7 @@
 int add(int a, int b)
 {
 	int sum;
+	
 	sum = a + b;
 	return (sum);
 }
