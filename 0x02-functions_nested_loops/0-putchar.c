@@ -3,7 +3,7 @@
 
 int main(void)
 {
-  char str[] = "_putchar";
+  char str[] = "_putchar\n";
   int i = 0;
   for (; str[i] != '\0'; i++)
   {
