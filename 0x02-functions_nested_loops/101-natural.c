@@ -8,7 +8,7 @@
 int main(void)
 {
     int i;
-    int addition = 0; // Initialize addition to zero
+    int addition = 0;
 
     for (i = 0; i < 1024; i++)
     {
