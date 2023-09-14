@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+0;276;0c/**
 *print_line - prints a straight line
 *@n:parameter
 *Return:returns nothing
