@@ -1,9 +1,13 @@
 #include "main.h"
 
 /**
- * print_square - prints squares
- * @size: parameter
- * Return: returns nothing
+ * print_square - Prints a square made of '#' characters.
+ * @size: The size of the square.
+ *
+ * Description: This function takes an integer 'size' and prints a square
+ * of '#' characters. If 'size' is less than or equal to 0, it prints a newline.
+ *
+ * Return: No return value.
  */
 void print_square(int size)
 {
