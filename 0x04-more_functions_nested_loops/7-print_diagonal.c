@@ -2,19 +2,18 @@
 
 void print_diagonal(int n)
 {
-  char space = ' ';
-  char all_space; 
-
+  int i, j;
+  
   if(n > 0)
     {
-  for (; n > 0;n--)
-    {
-      all_space = space * n;
-      _putchar(all_space);
-      _putchar('\\');
+      for (i = 1; i <= n; i++)
+	{
+	  for (j = 1; j <= i - 1; j++)
+	    {
+	      _putchar(' ');
+	    }
+	  _putchar('\\');
 
-    }
+	}
     }
   _putchar('\n');
-
-}
