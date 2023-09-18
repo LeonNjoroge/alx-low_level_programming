@@ -24,3 +24,4 @@ s[right] = temp;
 left++;
 right--;
 }
+}
