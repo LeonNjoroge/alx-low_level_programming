@@ -1,4 +1,4 @@
-#inlucde "main.h"
+#include "main.h"
 
 
 int _strlen(char *s)
@@ -8,7 +8,7 @@ int _strlen(char *s)
 
   for(; s[i] != '\0';i++)
     {
-      count++
+      count++;
 
     }
   return(count);
