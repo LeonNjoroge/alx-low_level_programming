@@ -1,5 +1,5 @@
 #include "main.h"
-0;276;0c
+
 void print_array(int *a, int n) {
   int i = 0;
   for (; i < n; i++) {
