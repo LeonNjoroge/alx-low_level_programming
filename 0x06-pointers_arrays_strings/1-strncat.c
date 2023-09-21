@@ -13,7 +13,7 @@ char *_strncat(char *dest, char *src, int n)
       
     }
 
-  while (s2 >= n)
+  while (s2 <= n)
         {
                 *(dest + s1) = *(src + s2);
                 if (*(src + s2) == '\0')
