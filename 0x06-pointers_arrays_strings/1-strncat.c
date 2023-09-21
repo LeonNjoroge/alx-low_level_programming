@@ -1,9 +1,5 @@
 #include "main.h"
 
-//concatinate dest & src
-//concatinate only at most n -  src  characters
-//src doesnt need to be numm-terminated in it contiains n or more bytes
-//return dest
 
 
 char *_strncat(char *dest, char *src, int n)
@@ -13,7 +9,7 @@ char *_strncat(char *dest, char *src, int n)
 
   while( *(dest + s1) != '\0')
     {
-      s1++
+      s1++;
       
     }
 
