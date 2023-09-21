@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * cap_string - Capitalizes the first letter of each word in a string.
+ * @s: The input string.
+ *
+ * Return: A pointer to the modified string.
+ */
 char *cap_string(char *s)
 {
 	int n = 0;
@@ -9,6 +15,7 @@ char *cap_string(char *s)
 	if (*(s + n) >= 97 && *(s + n) <= 122)
 		*(s + n) = *(s + n) - 32;
 	n++;
+
 	while (*(s + n) != '\0')
 	{
 		for (i = 0; i < 13; i++)
@@ -22,4 +29,6 @@ char *cap_string(char *s)
 		}
 		n++;
 	}
+
 	return (s);
+}
