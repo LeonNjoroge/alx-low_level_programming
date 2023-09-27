@@ -10,7 +10,7 @@ int prime(int n, int a)
 		else
 			return (0);
 	}
-	return (0 + prime(n, a + 1));
+  return (0 + prime(n, a + 1));
 }
 
 
