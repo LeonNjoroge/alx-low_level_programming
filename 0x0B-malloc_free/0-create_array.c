@@ -4,14 +4,23 @@
 char *create_array(unsigned int size, char c)
 {
   if (size == 0)
-    return NULL;
+    return (NULL);
 
  char *arr;
 
  arr = malloc(size * sizeof(char));
- arr[0] = c;
+ if (arr == NULL)
+    return (NULL);
 
- return arr;
+ int j;
+ 
+ for(;j < size;j++)
+   {
+     arr[j]=c;
+
+   }
+ 
+ return (arr);
 
    
 
