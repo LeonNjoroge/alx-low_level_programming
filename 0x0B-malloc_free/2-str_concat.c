@@ -1,9 +1,7 @@
 #include "main.h"
-0;276;0c#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-//count through s1 forgoing the null val, count through s2
-//add the values to val
 
 char *str_concat(char *s1, char *s2)
 {
