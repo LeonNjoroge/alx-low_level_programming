@@ -33,8 +33,8 @@ if (val == NULL)
 {
 return (NULL);
 }
-
-for (i = 0; i < size; i++)
+i = 0;
+for (; i < size; i++)
 {
 val[i] = str[i];
 }
