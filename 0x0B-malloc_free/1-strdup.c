@@ -27,7 +27,7 @@ i++;
 
 size = i;
 
-val = malloc(size * sizeof(char) + 1);
+val = malloc(size *sizeof(char) + 1);
 
 if (val == NULL)
 {

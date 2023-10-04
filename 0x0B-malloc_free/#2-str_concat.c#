@@ -37,8 +37,9 @@ s1 = tmp1;
 s2 = tmp2;
 len1 = i;
 len2 = j;
-val = malloc((len1 + len2) *sizeof(char) + 1);
+val = malloc((len1 + len2) * sizeof(char) + 1);
 
+ 
 if (val == NULL)
 return (NULL);
 

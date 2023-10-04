@@ -17,10 +17,9 @@ char **args;
 if (str == NULL || str[0] == '\0')
 return (NULL);
 
-a = 0;
 num = 0;
 
-for (; str[a] != '\0'; a++)
+for (a = 0; str[a] != '\0'; a++)
 {
 if (str[a] != ' ' && (str[a + 1] == ' ' || str[a + 1] == '\0'))
 num++;
@@ -37,18 +36,15 @@ free(args);
 return (NULL);
 }
 
-a = 0;
 c = 0;
-for (; str[a] != '\0' && c < num; a++)
+for (a = 0; str[a] != '\0' && c < num; a++)
 {
 if (str[a] != ' ')
 {
 size = 0;
 
 for (b = a; str[b] != ' ' && str[b] != '\0'; b++)
-{
 size++;
-}
 
 args[c] = (char *)malloc((size + 1) * sizeof(char));
 
@@ -62,9 +58,8 @@ return (NULL);
 }
 
 for (d = 0; d < size; d++, a++)
-{
 args[c][d] = str[a];
-}
+
 
 args[c][d] = '\0';
 c++;

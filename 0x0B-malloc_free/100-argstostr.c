@@ -27,7 +27,7 @@ len++;
 }
 len++;
 
-concat = (char *)malloc(len * sizeof(char));
+concat = (char *)malloc(len *sizeof(char));
 
 if (concat == NULL)
 {
