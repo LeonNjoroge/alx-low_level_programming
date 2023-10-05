@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+0;276;0c#include <stdlib.h>
 #include <stdio.h>
 
 /**
@@ -29,7 +29,7 @@ val = malloc((size1 + size2 + 1) * sizeof(char));
 
 if (!val)
 return (NULL);
-while (a < size11)
+while (a < size1)
 {
 val[a] = s1[a];
 a++;
