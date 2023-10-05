@@ -4,14 +4,24 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-  void *val;
-  size_t nmembb = nmemb;
+  char *val;
+  unsigned int a;;
+
+  if (nmemb == 0 || size == 0)
+    return(NULL);
   
-  val = calloc(nmembb , size);
+  val = calloc(nmembb * size);
 
   if (val == NULL)
-    exit(NULL);
+    return(NULL);
 
+  a = 0;
+  while(a < (nmemb * size))
+    {
+      val[a] = 0;
+      a++;
+    }
+  
   return (val);
 
 
