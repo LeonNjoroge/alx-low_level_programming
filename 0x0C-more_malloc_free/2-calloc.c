@@ -7,12 +7,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
   unsigned int a;;
 
   if (nmemb == 0 || size == 0)
-    return(NULL);
+    return (NULL);
   
   val = malloc(nmembb * size);
 
   if (val == NULL)
-    return(NULL);
+    return (NULL);
 
   a = 0;
   while(a < (nmemb * size))
@@ -22,9 +22,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
     }
   
   return (val);
-
-
-  
-
 
 }
