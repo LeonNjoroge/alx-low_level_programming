@@ -5,7 +5,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
   char *val;
-  int a = 0, b = 0, size1 = 0, size2 = 0;
+  unsigned int a = 0, b = 0, size1 = 0, size2 = 0;
 
   while (s1 && s1[size1])
     size1++;
@@ -32,9 +32,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
   return (val);
     
   
-
-
-
-
-
 }
