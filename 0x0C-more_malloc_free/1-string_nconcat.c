@@ -29,6 +29,11 @@ val = malloc((size1 + size2 + 1) * sizeof(char));
 
 if (!val)
 return (NULL);
+while (a < size11)
+{
+val[a] = s1[a];
+a++;
+}
 
 while (a < (size1 + n) && n < size2)
 val[a++] = s2[b++];
