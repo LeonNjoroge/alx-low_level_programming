@@ -44,10 +44,9 @@ dog_t *new_dog(char *name, float age, char *owner)
   while (c <= b)
     {
       dogo->owner[c] = owner[c];
+      c++;
     }
   return (dogo);
-
-
 
 
 }
