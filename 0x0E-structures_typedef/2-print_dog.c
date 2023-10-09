@@ -11,7 +11,7 @@ if (d)
     }
   else
     {
-      printf("Name: (nill)\n");
+      printf("Name: (nil)\n");
     }
   printf("Age: %f\n", d->age);
   if (d->owner)
@@ -20,7 +20,7 @@ if (d)
     }
   else
     {
-      printf("Owner: (nill)\n");
+      printf("Owner: (nil)\n");
     }
 }
 
