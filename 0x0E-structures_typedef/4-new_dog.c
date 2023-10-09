@@ -33,6 +33,8 @@ dog_t *new_dog(char *name, float age, char *owner)
       dogo->name[c] = name[c];
       c++;
     }
+  dogo->age = age;
+  dogo->owner = malloc(b * sizeof(dogo->owner));
   if (dogo->owner == NULL)
     {
       free(dogo->owner);
