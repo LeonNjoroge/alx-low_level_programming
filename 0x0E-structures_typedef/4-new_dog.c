@@ -26,7 +26,6 @@ while (owner[b] != '\0')
 b++;
 
 dogo = malloc(sizeof(dog_t));
-
 if (dogo == NULL)
 {
 free(dogo);
@@ -36,6 +35,7 @@ return (NULL);
 dogo->name = malloc((a + 1) * sizeof(char));
 if (dogo->name == NULL)
 {
+free(dogo->name);
 free(dogo);
 return (NULL);
 }
@@ -46,8 +46,15 @@ while (c <= b)
 dogo->owner[c] = owner[c];
 c++;
 }
-
 dogo->age = age;
+dogo->owner = malloc(b *sizeof(dogo->owner));
+if (dogo->owner == NULL)
+{
+free(dogo->owner);
+free(dogo->name);
+free(dogo);
+return (NULL);
+}
 
 return (dogo);
 }
