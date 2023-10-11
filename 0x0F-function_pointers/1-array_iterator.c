@@ -1,5 +1,5 @@
 #include "function_pointers.h"
-
+11;rgb:0000/0000/0000
 /**
  * array_iterator - Executes a function on each element of an integer array
  * @array: The array to be operated on
@@ -17,7 +17,7 @@ unsigned int a;
 
 if (array && action)
 {
-i = 0;
+a = 0;
 while (a < size)
 {
 action(array[a]);
