@@ -23,7 +23,7 @@ val = va_arg(args, char *);
 if (val)
 printf("%s", val);
 else
-printf("(nill)");
+printf("(nil)");
 
 if (a < n - 1)
 {
@@ -33,6 +33,7 @@ printf("%s", separator);
 
 a++;
 }
+
 printf("\n");
 va_end(args);
 }
