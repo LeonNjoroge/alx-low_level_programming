@@ -1,22 +1,22 @@
-#include "list.h"
+#include "lists.h"
 
 
 
 size_t print_list(const list_t *h)
 {
-  list_s* current = h;
-  unsigned int  count = 0;
+
+  size_t  count = 0;
   
-  while (current != NULL)
+  while (h != NULL)
     {
-      if (current->str == NULL)
-	printf("(nil)");
+      if (h->str == NULL)
+	printf("[0](nil)");
       else
 	{
-      printf("%s", current->str);
-      current = current->next;
-   
+      printf("%s", h->str);
 	}
+      
+      h = h->next;
       count++;
     }
   
