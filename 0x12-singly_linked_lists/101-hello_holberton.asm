@@ -1,17 +1,16 @@
-section .data
-    hello db "Hello, Holberton", 0
-    format db "%s\n", 0
+SECTION .data
+greeting db "Hello, Holberton", 0
+format_str db "%s", 10, 0
 
-section .text
-    extern printf
-    global main
+SECTION .text
+extern printf
+global main
 
 main:
-    mov rdi, format
-    mov rsi, hello
+    mov rsi, greeting
+    mov rdi, format_str
+    mov rax, 0
     call printf
 
-    ; Exit the program
-    mov rax, 60         ; syscall: exit
-    xor rdi, rdi        ; status: 0
-    syscall
+    mov rax, 0
+    ret
