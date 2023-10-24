@@ -6,11 +6,14 @@
 size_t print_listint_safe(const listint_t *head)
 {
   size_t number;
+  listint_t *current;
 
-  while (head != NULL)
+  current = head;
+  
+  while (current != NULL)
 {
-  printf("[%p] %d\n", (void *)head, head->n);
-head = head->next;
+  printf("[%p] %d\n", (void *)current, current->n);
+current = current->next;
 number++;
 }
 
