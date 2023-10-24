@@ -11,18 +11,24 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
+ *
  */
 typedef struct listint_s
 {
-    int n;
-    struct listint_s *next;
+int n;
+struct listint_s *next;
 } listint_t;
+
+/**
+ * struct listdif_s - A structure for a linked list with generic data.
+ * @n: A pointer to data of an unspecified type.
+ * @next: A pointer to the next element in the linked list.
+ */
 
 typedef struct listdif_s
 {
-  void *n;
-  struct listdif_s *next;
+void *n;
+struct listdif_s *next;
 } listdif_t;
 
 size_t print_listint(const listint_t *h);
