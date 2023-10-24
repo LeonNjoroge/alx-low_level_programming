@@ -1,9 +1,9 @@
 #include "lists.h"
 
 
-size_t free_listint_safe(listint_t **h)
+listint_t *find_listint_loop(listint_t *head)
 {
-  listint_t *temp = *head, *previous = *head;
+  listint_t *temp = head, *previous = head;
 
   while (head && temp->next && temp)
     {
@@ -21,7 +21,7 @@ size_t free_listint_safe(listint_t **h)
 
 	      while (temp->next != previous && temp->next != head)
 		{
-		  temp = temp-next;
+		  temp = temp->next;
 		}
 	      if (temp->next == head)
 		break;
