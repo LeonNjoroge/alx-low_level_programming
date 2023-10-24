@@ -3,12 +3,18 @@
 
 void free_listint2(listint_t **head)
 {
-listint_t *curr;
+  listint_t *current, *temp;
 
 while (*head != NULL)
 {
-curr = *head;
-*head = curr->next;
-free(curr);
+current = *head;
+
+ while ((temp = current) != NULL)
+   {
+     current = current->next;
+     free(temp);
+
+   }
+ *head = NULL;
 }
 }
