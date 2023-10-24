@@ -2,14 +2,19 @@
 
 int pop_listint(listint_t **head)
 {
-  int data = 0;
-
+  int data;
+  listint_t *hd, *current;
+  
 
 if (head == NULL)
   return (0);
 
- data = (*head)->n;
+ current = *head;
+ data = current->n;
 
- *head = (*head)->next;
+ *hd = current->next;
+
+ free(current);
+ *head = hd;
  return (data);
 }
