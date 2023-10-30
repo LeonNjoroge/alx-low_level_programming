@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
  * create_file - Creates a file and writes text content to it.
@@ -44,7 +44,7 @@ if (b == -1)
 return (-1);
 }
 
-close (m);
+close(m);
 return (1);
 
 }

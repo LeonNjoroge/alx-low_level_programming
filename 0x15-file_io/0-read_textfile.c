@@ -12,7 +12,7 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-ssize_t a,b;
+ssize_t a, b;
 int m;
 char *c;
 
@@ -42,6 +42,6 @@ close(m);
 
 free(c);
 
-return(b);
+return (b);
 
 }

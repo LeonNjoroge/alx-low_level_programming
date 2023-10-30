@@ -33,11 +33,11 @@ while (text_content[a])
 {
 a++;
 }
-b = write(m, text_content, a):
+b = write(m, text_content, a);
 
 if (b == -1)
 {
-return(-1);
+return (-1);
 }
 
 }
