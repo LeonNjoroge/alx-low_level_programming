@@ -66,7 +66,7 @@ e_cl = close(f_t);
 
 if (e_cl == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_f);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_t);
 exit(100);
 }
 return (0);
