@@ -46,7 +46,7 @@ f_f = open(argv[1], O_RDONLY);
 f_t = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 file_error(f_f, f_t, argv);
 cns = 1024;
-while (cns = 1024)
+while (cns == 1024)
 {
 cns = read(f_f, c, 1024);
 if (cns == -1)
