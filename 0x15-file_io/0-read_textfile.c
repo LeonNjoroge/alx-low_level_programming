@@ -36,7 +36,7 @@ if (!c)
 return (0);
 }
 a = read(m, c, letters);
-b = write(STDOUT_FILENO, buf, a);
+b = write(STDOUT_FILENO, c, a);
 
 close(m);
 
