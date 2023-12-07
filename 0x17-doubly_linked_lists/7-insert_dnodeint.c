@@ -7,12 +7,12 @@
  * @h: head of the list
  * @idx: index of the new node
  * @n: value of the new node
- * Return: the address of the new node, or NULL 
+ * Return: the address of new node, or NULL
  */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-    dlistint_t *hd_point;
+	dlistint_t *hd_point;
 	dlistint_t *latest;
 	unsigned int m;
 
@@ -41,9 +41,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 						latest->next = hd_point->next;
 						latest->prev = hd_point;
-
 						hd_point->next->prev = latest;
-
 						hd_point->next = latest;
 					}
 				}

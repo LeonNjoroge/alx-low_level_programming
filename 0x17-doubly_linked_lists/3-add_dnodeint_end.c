@@ -8,7 +8,7 @@
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-    dlistint_t *latest;
+	dlistint_t *latest;
 	dlistint_t *h_val;
 
 
@@ -30,5 +30,5 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		*head = latest;
 	}
 	latest->prev = h_val;
-    return (latest);
+	return (latest);
 }
