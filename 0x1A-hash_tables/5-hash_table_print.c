@@ -9,37 +9,37 @@
 
 void hash_table_print(const hash_table_t *ht)
 {
-	unsigned char flag_com = 0;
-    hash_nd_t *nd;
-	unsigned long int m;
+unsigned char flag_com = 0;
+hash_nd_t *nd;
+unsigned long int m;
 
 
-	if (ht == NULL)
-        {
-		return;
-        }
-	printf("{");
+if (ht == NULL)
+{
+return;
+}
+printf("{");
 
-	for (m = 0; m < ht->size; m++)
-	{
-		if (ht->array[m] != NULL)
-		{
-			if (flag_com == 1)
-                {
-				printf(", ");
-                }
+for (m = 0; m < ht->size; m++)
+{
+if (ht->array[m] != NULL)
+{
+if (flag_com == 1)
+{
+printf(", ");
+}
 
-			nd = ht->array[m];
-			while (nd != NULL)
-			{
-				printf("'%s': '%s'", nd->key, nd->value);
-				nd = nd->next;
+nd = ht->array[m];
+while (nd != NULL)
+{
+printf("'%s': '%s'", nd->key, nd->value);
+nd = nd->next;
 
-				if (nd != NULL)
-					printf(", ");
-			}
-			flag_com = 1;
-		}
-	}
-	printf("}\n");
+if (nd != NULL)
+printf(", ");
+}
+flag_com = 1;
+}
+}
+printf("}\n");
 }
