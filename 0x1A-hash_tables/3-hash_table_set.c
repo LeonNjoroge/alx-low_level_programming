@@ -23,7 +23,6 @@ copy_val = strdup(value);
 if (copy_val == NULL)
 return (0);
 ind = key_index((const unsigned char *)key, ht->size);
-
 for (m = ind; ht->array[m]; m++)
 	{
 		if (strcmp(ht->array[m]->key, key) == 0)
