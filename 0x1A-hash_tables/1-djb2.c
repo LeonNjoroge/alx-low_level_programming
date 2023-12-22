@@ -16,7 +16,7 @@ unsigned long int table;
 table = 5381;
 while ((l = *str++))
 {
-table = ((table << 5) +table) +l;
+table = ((table << 5) + table) + l;
 }
 return (table);
 }

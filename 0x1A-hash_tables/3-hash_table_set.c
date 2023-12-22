@@ -24,29 +24,29 @@ if (copy_val == NULL)
 return (0);
 ind = key_index((const unsigned char *)key, ht->size);
 for (m = ind; ht->array[m]; m++)
-	{
-		if (strcmp(ht->array[m]->key, key) == 0)
-		{
-			free(ht->array[m]->value);
+{
+if (strcmp(ht->array[m]->key, key) == 0)
+{
+free(ht->array[m]->value);
 
-			ht->array[m]->value = copy_val;
-			return (1);
-		}
-	}
-	other = malloc(sizeof(hash_node_t));
-	if (other == NULL)
-	{
-		free(copy_val);
-		return (0);
-	}
-	other->key = strdup(key);
-	if (other->key == NULL)
-	{
-		free(other);
-		return (0);
-	}
-	other->value = copy_val;
-	other->next = ht->array[ind];
-	ht->array[ind] = other;
-	return (1);
+ht->array[m]->value = copy_val;
+return (1);
+}
+}
+other = malloc(sizeof(hash_node_t));
+if (other == NULL)
+{
+free(copy_val);
+return (0);
+}
+other->key = strdup(key);
+if (other->key == NULL)
+{
+free(other);
+return (0);
+}
+other->value = copy_val;
+other->next = ht->array[ind];
+ht->array[ind] = other;
+return (1);
 }
