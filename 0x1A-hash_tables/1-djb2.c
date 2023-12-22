@@ -17,6 +17,7 @@ table = 5381;
 while ((l = *str++))
 {
 table = ((table << 5) + table) + l;
+
 }
 return (table);
 }
